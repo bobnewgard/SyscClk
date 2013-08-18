@@ -1,0 +1,11 @@
+*.swp
+*.o
+*.so
+*.a
+*.d
+*dep.mk
+*.vcd
+test
+obj_dir/
+doxygen/
+Readme.md
