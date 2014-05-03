@@ -61,7 +61,7 @@ define dox
 	rm -f Readme.md
 	echo "\\mainpage %SyscClk Project" >> Readme.md
 	cat README.md >> Readme.md
-	doxygen doxygen.conf
+	doxygen dox.conf
 endef
 
 # add auxiliary targets here, if needed
