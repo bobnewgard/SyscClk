@@ -21,6 +21,7 @@
     #define _SYSCCLK_H_
 
     #include <systemc>
+    #include <memory>
     #include <string>
     #include <iostream>
     #include <sstream>
