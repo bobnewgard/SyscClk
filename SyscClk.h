@@ -24,15 +24,15 @@
     #include <string>
     #include <iostream>
     #include <sstream>
-    #include <SyscMsg.h>
+    #include <VltrMsg.h>
 
     namespace SyscClk
     {
         using namespace std;
         using namespace sc_core;
         using namespace sc_dt;
-        using namespace SyscMsg;
-        using namespace SyscMsg::Chars;
+        using namespace VltrMsg;
+        using namespace VltrMsg::Chars;
 
         template <typename T_out>
         class Clk : public sc_module
@@ -100,8 +100,8 @@
         {
             ostringstream os;
 
-            os << "Clk::run() starting with frequency" << SP << this->freq_hz << SP << "hz";
-            this->msg->report_inf(os.str());
+            os << "Starting with frequency" << SP << this->freq_hz << SP << "hz";
+            this->msg->inf(os.str());
 
             while (true) {
                 wait(this->clk_src->value_changed_event());
