@@ -1,1 +1,11 @@
-remote url ssh://git@ssh.github.com:443/bobnewgard/SyscClk.git
+## Use with GitHub
+
+1. Create remote
+    <pre>
+    git remote add github ssh://git@ssh.github.com:443/bobnewgard/SyscClk.git
+    </pre>
+
+1. Push to the remote
+    <pre>
+    git push github
+    </pre>
