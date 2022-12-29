@@ -1,1 +1,12 @@
-null
+Setup for GitHub remote:
+
+<pre>
+    git remote add github ssh://git@ssh.github.com:443/bobnewgard/SyscClk.git
+    git config remote.github.annex-ignore true
+</pre>
+
+Push to GitHub:
+
+<pre>
+    git push github main
+</pre>
